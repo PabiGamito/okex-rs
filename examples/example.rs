@@ -6,7 +6,6 @@ fn main() {
     let restClient: RestClient = OKEx::new();
     let webSocketClient: WSClient = OKEx::new();
 
-    println!("Calling trading pairs!");
-    println!("Got {:?}", restClient.trading_pairs());
-    println!("Called trading pairs!");
+    println!("{:?}", restClient.trading_pairs());
+    println!("{:?}", restClient.order_book("BTC-USDT", 5, 0.2));
 }
