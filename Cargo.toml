@@ -1,0 +1,10 @@
+[package]
+name = "okex"
+version = "0.1.0"
+authors = ["Pablo Gamito <pablo@gamito.me>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.21"
+serde = "1.0.101"
+serde_json = "1.0.41"
